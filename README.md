@@ -34,7 +34,7 @@ Then run the following commands for mentioned devices.
 ryu-manager --ofp-tcp-listen-port 6633 controller.py 
 ```
 
-### switches
+### switches (sw0, sw1, sw2)
 ```
 chmod +x init_ovs.sh
 ./init_ovs.sh 10.0.8.10
@@ -63,4 +63,4 @@ sudo socat -v TCP-LISTEN:6633,reuseaddr,fork TCP:10.0.8.10:6633
 wireshark
 ```
 
-![](simulation.gif)
+![](mitm_attack_sdn_sbi.gif)
